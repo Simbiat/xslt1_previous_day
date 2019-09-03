@@ -123,7 +123,7 @@
         </xsl:variable>
         <!--Add leading zeros-->
         <xsl:variable name="pyyyy" select="substring(concat('0000', $pyy_init2), string-length($pyy_init2) + 1)"/>
-        <xsl:variable name="pmm" select="substring(concat('00', $pmm_init), string-length($pmm_init) + 1)"/>
+        <xsl:variable name="pmm" select="substring(concat('00', $pmm_init2), string-length($pmm_init2) + 1)"/>
         <xsl:variable name="pdd" select="substring(concat('00', $pdd_init2), string-length($pdd_init2) + 1)"/>
         <!--Output-->
         <xsl:value-of select="$pyyyy" />
